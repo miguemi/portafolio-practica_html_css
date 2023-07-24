@@ -1,0 +1,184 @@
+/*MENU*/
+
+body {
+    background-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+@media (min-width: 768px) {
+    .contenedor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .contenido-seccion {
+        padding: 2rem;
+    }
+    .lista-proyectos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor-header {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+    .contenido-seccion {
+        padding: 1rem;
+    }
+    .lista-proyectos {
+        display: block;
+    }
+}
+
+
+/*header start*/
+
+.contenedor-header {
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font: 'Righteous';
+    font-size: 25px;
+    color: #73b61c;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo a {
+    text-align: center;
+}
+
+
+/*seccion sobre mi*/
+
+.sobremi {
+    background-color: #707208;
+    color: #070404;
+    padding: 50px 30px;
+    margin: auto;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    text-align: left;
+}
+
+.sobremi h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: left;
+}
+
+.sobremi .contenido-seccion p {
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+    text-align: left;
+    font-family: 'Righteous';
+}
+
+
+/*mi portafolio*/
+
+.project {
+    background-color: rgb(39, 170, 164);
+    color: #070404;
+    padding: auto;
+    margin: auto;
+}
+
+.contenido-seccion {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista-proyectos {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.contenido-seccion .project h2 {
+    font-size: 20px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+
+
+/* foooter */
+
+.footer {
+    background-color: #b7c0c5;
+    width: 100%;
+}
+
+.contenido-footer {
+    font-size: 15px;
+    color: #0f0620;
+    text-align: center;
+}
+
+
+/* color por proyecto */
+
+.proyecto-1 {
+    background-color: #6e3b3b;
+    border-radius: 20px;
+}
+
+.proyecto-2 {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.proyecto-3 {
+    background-color: #cf9415;
+    border-radius: 20px;
+}
+
+.proyecto-4 {
+    background-color: #9cb8ca;
+    border-radius: 20px;
+}
